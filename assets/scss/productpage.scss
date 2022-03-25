@@ -1,3 +1,4 @@
+// START OF PRODUCT BODY CSS
 .product-body{
     
 input:checked + .terms-showMore + * {
@@ -132,7 +133,7 @@ input:checked + .terms-showMore + * {
 }
 .productView-description.green-matt-desc {
     width: 85%;
-    margin-bottom: 0;
+    margin-bottom: 1rem !important;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -142,14 +143,18 @@ input:checked + .terms-showMore + * {
     margin: 0;
     color: #173456;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 18px !important;
+    margin: 1rem 0;
+}
+h4.productView-price {
+    display: none;
 }
 .grn-matt-price h4 {
     width: auto;
 }
 .custom-productTitle.green-matt-title {
-    margin-inline: auto;
-    width: 90%;
+    margin-left: auto;
+    width: 95%;
 }
 .grn-matt-price {
     width: 90%;
@@ -678,12 +683,7 @@ label.terms-showMore.specs-label {
     float: left;
     position: absolute;
 }
-    div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-container {
-    max-width: 1200px;
-    margin: 0 !important;
-    border: none!important;
-    padding: 0!important;
-}
+
 .stamped-display #stamped-main-widget {
     display: block !important;
 
@@ -800,7 +800,7 @@ section.productView-details.green-matt-details {
     background: #fff;
     padding-left: 0;
 }
-@media only screen and (max-width: 1920px) {
+
 
     .grid-ship-details {
         display: grid;
@@ -826,7 +826,7 @@ section.productView-details.green-matt-details {
         display: none;
     }
 
-}
+
 @media only screen and (max-width: 1825px) {
     .prodview-advantage-con>div h4 {
         font-size: 20px;
@@ -1426,11 +1426,6 @@ div[data-widget-style*=standard] .stamped-summary-actions {
         margin-inline: auto;
         margin-top: -3em;
     }
-    .custom-productTitle.green-matt-title {
-        margin-inline: auto;
-        width: 100%;
-        text-align: left;
-    }
 
     .productView-product.green-matt-prod {
         display: grid !important;
@@ -1847,4 +1842,268 @@ div[data-widget-style*=standard] .stamped-summary-actions {
         }
     }
 
-}
+    .rowtab-content {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #666;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .rowtab-content .first {
+        width: 32%;
+    }
+    .rowtab-content .sec {
+        width: 60%;
+        h4{
+            font-size: 16px;
+        }
+        h4 a{
+            text-decoration: none;
+            color: #666666;
+            font-weight: 600;
+        }
+        i{
+            font-size: 1.2rem;
+            display: inline-block;
+            border-radius: 30px;
+            margin-top: 1rem;
+
+            &::before{
+                color: #fff;
+                background-color: #264da3;
+                border-radius: 8px;
+                padding: 0.5rem;
+            }
+        }
+
+        .price{
+            margin: 0 0 0 1rem;
+            color: #173456;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+
+    .image-layers img{
+        display: none;
+        width: 100%;
+    }
+    .image-layers img.first{
+        display: block;
+    }
+
+    .types-of-foams {
+        display: flex;
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+        }
+
+        .image-layers{
+            width: 52%;
+            @media screen and(max-width: 800px){
+                width: 100%;
+            }
+        }
+        .text-section{
+            display: none;
+            width: 42%;
+            margin: auto 0 auto auto;
+            @media screen and (max-width: 800px) {
+                width: 88%;
+                margin: 0 auto;
+            }
+        }
+        .text-section.first{
+            display: block;
+        }
+
+        .text-section h4 {
+            font-size: 28px;
+            font-family: "Montserrat";
+            font-weight: 600;
+            color: #132448;
+        }
+        .text-section a {
+            border-radius: 8px;
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-weight: 400;
+            background-color: #264da3;
+            padding: 15px 60px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem 0 0;
+        }
+    }
+
+    .dreams-section{
+        display: flex;
+        background: #e2e8ed;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;;
+        }
+
+        .img-section{
+            width: 45%;
+            @media screen and (max-width: 800px) {
+                width: 88%;
+                margin: 0 auto;
+            }
+        }
+        .text-section{
+            width: 44%;
+            margin: auto;
+
+            @media screen and (max-width: 800px) {
+                width: 88%;
+                margin: 0 auto;
+            }
+            div{
+                margin: auto;
+                width: 95%;
+            }
+            h2{
+                font-family: "Montserrat";
+                font-weight: 600;
+                color: #132448;
+            }
+            a{
+                border-radius: 8px;
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-weight: 400;
+                background-color: #264da3;
+                padding: 15px 60px;
+                text-decoration: none;
+                display: inline-block;
+                margin: 1rem 0 0;
+            }
+        }
+
+    }
+
+    .firmness-section {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        h2{
+            font-family: "Montserrat";
+            font-weight: 600;
+            color: #132448;
+        }
+        .flex-gif {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 608px;
+
+            div img{
+                max-width: 120px;
+            }
+        }
+    }
+
+    .icon-difference-section{
+        width: 85%;
+        margin: 4.5rem auto 0;
+        h2{ 
+            font-family: "Montserrat";
+            font-weight: 600;
+            color: #132448;
+        }
+        img{
+            width: 100%;
+
+            @media screen and (max-width: 1425px) {
+                width: auto;
+            }
+        }
+        p{
+            margin: 1rem 0 1.5rem;
+        }
+    }
+
+    .we-learned-section {
+        display: flex;
+        margin: 3.5rem 0 0;
+        background: #e2e8ed;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;;
+        }
+
+       .img-content {
+            width: 45%;
+            @media screen and (max-width: 800px) {
+                width: 88%;
+                margin: 0 auto;
+            }
+        }
+
+       .text-content {
+            width: 55%;
+            margin: auto;
+            @media screen and (max-width: 800px) {
+                width: 88%;
+                margin: 0 auto;
+            }
+           
+            div{
+                width: 75%;
+                margin: 0 auto;
+
+                h2{
+                    font-family: "Montserrat";
+                    font-weight: 600;
+                    color: #132448;
+                }
+            }
+        }
+    }
+
+    .newreview-section{
+        margin: 3.5rem auto 0;
+        width: 85%;
+
+        div.stamped-container[data-widget-style]{
+            max-width: 1920px;
+        }
+        #stamped-main-widget{
+            margin: 1.5em 0;
+        }
+        .stamped-header-title, .stamped-reviews-filter, .stamped-summary, .stamped-tab-container, .stamped-review[data-verified=buyer] .stamped-review-avatar:before, .stamped-review-avatar-content, .stamped-review-header .stamped-verified-badge[data-type=buyer][data-verified-label]:after, .stamped-review-header .review-location{
+            display: none !important;
+        }
+        .stamped-review-content {
+            margin: 0;
+        }
+        .stamped-review{
+            margin-bottom: 10px;
+            border-top: 1px solid #888;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            h2 {
+                margin: 0 1rem 0 0;
+                font-family: "Montserrat";
+                font-weight: 900;
+                color: #132448;
+                font-size: 28px;
+
+                span {
+                    font-weight: 600;
+                    margin: 0 0.5rem;
+                }
+            }
+            a{
+                color: #264da3;
+                margin: 0 1rem;
+            }
+        } 
+
+    }
+
+
+
+} //END OF PRODUCT BODY BRACE CSS

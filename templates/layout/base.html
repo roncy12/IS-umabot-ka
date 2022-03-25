@@ -373,10 +373,10 @@
             $(".heroCarousel-slide.heroCarousel-slide--first .heroCarousel-content .heroCarousel-description").html("Jaw-dropping prices, same iconic <br> experience.");
             
             // Get In Touch
-            $(".get-intouch div:last-child form .form-row").removeClass("form-row--half");
-            $(".get-intouch div:last-child form").append("<div class='custom-flex-row'></div>");
-            $(".get-intouch div:last-child form .form-field").addClass("comment-field");
-            $(".get-intouch div:last-child form .form-row .form-field").removeClass("comment-field");
+            $(".get-intouch div form .form-row").removeClass("form-row--half");
+            $(".get-intouch div form .form-row .form-field").addClass("comment-field");
+            $(".get-intouch div form .form-row .form-field:first-child").removeClass("comment-field");
+            $(".get-intouch div form").append("<div class='custom-flex-row'></div>");
             $(".get-intouch div:last-child form .custom-flex-row").append($(".get-intouch div:last-child form .form-row"));
             $(".get-intouch div:last-child form").append("<div class='last-column'></div>");
  
